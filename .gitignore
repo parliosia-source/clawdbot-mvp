@@ -1,0 +1,13 @@
+# env (never commit secrets)
+.env.local
+
+# deps
+node_modules/
+
+# builds
+.next/
+dist/
+.turbo/
+
+# misc
+.DS_Store

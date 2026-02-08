@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": [
+      "ES2022",
+      "DOM"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@app/tools": [
+        "packages/tools/src/index.ts"
+      ],
+      "@app/tools/*": [
+        "packages/tools/src/*",
+        "packages/tools/*"
+      ],
+      "@app/auth": [
+        "packages/auth/src/index.ts"
+      ],
+      "@app/auth/*": [
+        "packages/auth/src/*"
+      ],
+      "@app/telemetry": [
+        "packages/telemetry/src/index.ts"
+      ],
+      "@app/telemetry/*": [
+        "packages/telemetry/src/*"
+      ]
+    },
+    "skipLibCheck": true,
+    "noEmit": true
+  }
+}
