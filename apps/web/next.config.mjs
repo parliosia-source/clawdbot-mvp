@@ -1,7 +1,10 @@
-/** @type {import("next").NextConfig} */
+﻿/** @type {import("next").NextConfig} */
 const nextConfig = {
   experimental: {
-    externalDir: true
+    externalDir: true,
+    turbopack: {
+      root: __dirname + "/../.."
+    }
   },
   transpilePackages: ["@app/tools", "@app/auth", "@app/telemetry"]
 };
